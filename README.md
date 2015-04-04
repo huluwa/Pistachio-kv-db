@@ -1,6 +1,6 @@
 Pistachio
 ==========
-[![CI](https://travis-ci.org/lyogavin/Pistachio.svg)](https://travis-ci.org/lyogavin/Pistachio)
+[![CI](https://travis-ci.org/yahoo/Pistachio.svg)](https://travis-ci.org/yahoo/Pistachio)
 ### Low latency, Strong consistency, Fault tolerant
 
 Pistachio is a distributed key value store system. Data can be replicated with n replicas with strong consistency gurantees. Up to (n-1) failures can be tolerated.
