@@ -9,15 +9,19 @@
  * limitations under the License. See accompanying LICENSE file.
  */
 
-package com.yahoo.ads.pb.store;
+package com.yahoo.ads.pb.customization;
 
 /**
- * JMX MBean for profile server store partition.
- * 
- *
+ * Callback/Hook registered upon lookup called on server side.
  */
-public interface StorePartitionMBean {
-    public long getKafkaLatestOffset();
-    public long getCurrentConsumeOffset();
-    public long getConsumeOffsetGap();
+public interface LookupCallback {
+
+    /**
+     * Given the key and currentValue of lookup, return the massaged value
+     * 
+     * @param key
+     * @param currentValue
+     * @return
+     */
+    public byte[] onLookup(byte[] key, byte[] currentValue);
 }
